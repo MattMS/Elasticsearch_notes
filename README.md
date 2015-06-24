@@ -50,6 +50,11 @@ PUT /my_index/my_document_type/1
 
 ```
 GET /my_index/my_document_type/1
+```
+
+Returns:
+
+```
 {
 	"_id": "1",
 	"_index": "my_index",
@@ -70,6 +75,11 @@ GET /my_index/my_document_type/1
 
 ```
 GET /my_index/my_document_type/_search
+```
+
+Returns:
+
+```
 {
 	"_shards": {},
 	"hits": {
@@ -100,3 +110,19 @@ GET /my_index/my_document_type/_search?q=email:matt
 ```
 
 - https://www.elastic.co/guide/en/elasticsearch/guide/current/_search_lite.html
+
+
+## Query Domain-Specific Language (DSL)
+
+```
+GET /my_index/my_document_type/_search
+{
+	"query": {
+		"match": {
+			"email": "matt@example.com"
+		}
+	}
+}
+```
+
+- https://www.elastic.co/guide/en/elasticsearch/guide/current/_search_with_query_dsl.html
