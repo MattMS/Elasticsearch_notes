@@ -1,5 +1,17 @@
 # Learn Elasticsearch
 
+Learn how to use Elasticsearch.
+
+
+## Disclaimer
+
+These notes have been created while I am learning Elasticsearch.
+They will probably change as I learn more.
+This is *not* a tutorial by an Elasticsearch expert.
+
+You have been warned!
+
+
 ## Starting in Docker
 
 There is an [official repo for Elasticsearch](https://registry.hub.docker.com/_/elasticsearch/).
