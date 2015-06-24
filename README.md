@@ -111,20 +111,4 @@ Returns:
 GET /my_index/my_document_type/_search?q=name:Matt
 ```
 
-- https://www.elastic.co/guide/en/elasticsearch/guide/current/_search_lite.html
-
-
-## Query Domain-Specific Language (DSL)
-
-```
-GET /my_index/my_document_type/_search
-{
-	"query": {
-		"match": {
-			"email": "matt@example.com"
-		}
-	}
-}
-```
-
-- https://www.elastic.co/guide/en/elasticsearch/guide/current/_search_with_query_dsl.html
+- [Search Lite](https://www.elastic.co/guide/en/elasticsearch/guide/current/_search_lite.html)
