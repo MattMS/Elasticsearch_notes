@@ -14,7 +14,9 @@ You have been warned!
 
 ## Starting in Docker
 
-There is an [official repo for Elasticsearch](https://registry.hub.docker.com/_/elasticsearch/).
+There is an
+[official repo for Elasticsearch](https://registry.hub.docker.com/_/elasticsearch/)
+on Docker Hub Registry.
 
 First pull the repo:
 
@@ -28,9 +30,9 @@ Then start the container from the image:
 docker run -d -p 9200:9200 elasticsearch
 ```
 
-This will start the container in detched mode (-d), so you will return
+This will start the container in detched mode (`-d`), so you will return
 to the command line.
-It will also expose Elasticsearch on port 9200 on the Docker IP.
+It will also expose Elasticsearch on port `9200` on the Docker IP.
 
 
 ## Index (add) a document
@@ -106,7 +108,7 @@ Returns:
 ```
 
 ```
-GET /my_index/my_document_type/_search?q=email:matt
+GET /my_index/my_document_type/_search?q=name:Matt
 ```
 
 - https://www.elastic.co/guide/en/elasticsearch/guide/current/_search_lite.html
