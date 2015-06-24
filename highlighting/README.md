@@ -49,4 +49,6 @@ Returns:
 }
 ```
 
-- [Highlighting Our Searches](https://www.elastic.co/guide/en/elasticsearch/guide/current/highlighting-intro.html)
+- [Highlighting in Main Reference](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-request-highlighting.html)
+
+- [Highlighting Our Searches in Main Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/highlighting-intro.html)
