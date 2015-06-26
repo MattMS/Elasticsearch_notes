@@ -2,6 +2,9 @@
 
 Learn how to use Elasticsearch.
 
+Example code is listed in alphabetical order, which is different to what
+Elasticsearch will return.
+
 
 ## Disclaimer
 
@@ -12,56 +15,12 @@ This is *not* a tutorial by an Elasticsearch expert.
 You have been warned!
 
 
-## Index (add) a document
+## CRUD
 
-```
-PUT /my_index/my_document_type/1
-{
-	"email": "matt@example.com",
-	"name": "Matt"
-}
-```
-
-- [Indexing Employee Documents in Main Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/_indexing_employee_documents.html)
-
-
-## Retrieve a document
-
-```
-GET /my_index/my_document_type/1
-```
-
-Returns:
-
-```
-{
-	"_id": "1",
-	"_index": "my_index",
-	"_source": {
-		"email": "matt@example.com",
-		"name": "Matt"
-	},
-	"_type": "my_document_type",
-	"_version": 1,
-	"found": true
-}
-```
-
-Exclude the document metadata:
-
-```
-GET /my_index/my_document_type/1/_source
-```
-
-Only get specific fields (with metadata):
-
-```
-GET /my_index/my_document_type/1?_source=link,title
-```
-
-- [Retrieving a Document (1) in Main Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/_retrieving_a_document.html)
-
-- [Retrieving a Document (2) in Main Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/get-doc.html)
+[Create](./document/create),
+[read](./document/read),
+[update](./document/update) and
+[delete](./document/delete) documents.
 
 
 ## Search
