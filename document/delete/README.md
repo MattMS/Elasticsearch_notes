@@ -17,3 +17,12 @@ Returns:
 ```
 
 - [Deleting a Document in Main Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/delete-doc.html)
+
+
+## Delete all documents
+
+Delete all documents in index of the given type:
+
+```
+DELETE /my_index/my_document_type/
+```
